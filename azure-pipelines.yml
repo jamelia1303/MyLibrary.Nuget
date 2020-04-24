@@ -19,6 +19,7 @@ stages:
         command: 'restore'
         projects: '**/*.csproj'
         feedsToUse: 'select'
+        
 
     - task: DotNetCoreCLI@2
       inputs:
@@ -37,4 +38,4 @@ stages:
         command: 'push'
         packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
         nuGetFeedType: 'internal'
-        publishVstsFeed: 'f50482f5-11a3-4eea-9ab0-2b4c997bd0e2'
+        publishVstsFeed: '0bada1b8-4ae3-41d5-8aab-9f5b9891f099'
